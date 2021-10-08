@@ -12,10 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
+    <!-- container -->
     <div class="container-fluid">
+      <!-----------------------NAV-BAR -------------------------------------------->
       <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
@@ -29,50 +33,69 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div id="nav-menu" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-3">
+          <div
+            id="nav-menu"
+            class="collapse navbar-collapse justify-content-end"
+          >
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#">How we work</a>
               </li>
               <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary rounded-0 text-primary"
+                >
+                  View plans
+                </button>
+              </li>
             </ul>
-            <button type="button" class="btn btn-outline-secondary">
-              View plans
-            </button>
           </div>
         </div>
       </nav>
+      <!-----------------------HEADER -------------------------------------------->
       <header>
-        <!-- left part -->
-        <div class="row">
-          <div class="col-12 col-sm-6 border">
-            <h1>Humanizing your insurance.</h1>
-            <p>
+        <div class="row custom-header">
+          <!-- picture part -->
+          <div class="col-12 col-sm-6 order-sm-last">
+            <img
+              src="./images/image-intro-desktop.jpg"
+              alt="family photo"
+              class="img-fluid "
+            />
+          </div>
+
+          <!-- text part -->
+          <div class="col-12 col-sm-6 custom-header-right">
+            <h1 class="text-center text-md-start p-3">
+              Humanizing your insurance.
+            </h1>
+            <p class="text-center text-md-start p-3">
               Get your life insurance coverage easier and faster. We blend our
               expertise and technology to help you find the plan that’s right
               for you. Ensure you and your loved ones are protected.
             </p>
-            <button type="button" class="btn btn-primary">View plans</button>
-          </div>
-
-          <!-- right part -->
-          <div class="col-12 col-sm-6 border">
-            <img
-              src="./images/image-intro-desktop.jpg"
-              alt="family photo"
-              class="img-fluid"
-            />
+            <div class="text-center text-md-start p-3">
+              <button type="button" class="btn btn-outline-secondary rounded-0">
+                View plans
+              </button>
+            </div>
           </div>
         </div>
       </header>
+      <!-----------------------CARDS SECTION -------------------------------------------->
       <section>
         <div class="row">
-          <div class="col-12"><h2>We’re different</h2></div>
-          <div class="card col-12 col-sm-4">
+          <div class="col-12">
+            <h2 class="text-center text-md-start my-5 ps-5">We’re different</h2>
+          </div>
+          <!-- CARD-1 -->
+          <div class="card col-12 col-sm-4 border-0 text-center text-md-start">
             <img
               src="./images/icon-snappy-process.svg"
-              class="card-img-top"
+              class="card-img-top w-50 mx-auto"
               alt="Snappy Process"
             />
             <div class="card-body">
@@ -81,13 +104,13 @@
                 Our application process can be completed in minutes, not hours.
                 Don’t get stuck filling in tedious forms.
               </p>
-              <a href="#" class="btn btn-primary">Know more...</a>
             </div>
           </div>
-          <div class="card col-12 col-sm-4">
+          <!-- CARD-2 -->
+          <div class="card col-12 col-sm-4 border-0 text-center text-md-start">
             <img
               src="./images/icon-affordable-prices.svg"
-              class="card-img-top"
+              class="card-img-top w-50 mx-auto"
               alt="Affordable Prices"
             />
             <div class="card-body">
@@ -96,13 +119,13 @@
                 We don’t want you worrying about high monthly costs. Our prices
                 may be low, but we still offer the best coverage possible.
               </p>
-              <a href="#" class="btn btn-primary">Know more...</a>
             </div>
           </div>
-          <div class="card col-12 col-sm-4">
+          <!-- CARD-3 -->
+          <div class="card col-12 col-sm-4 border-0 text-center text-md-start">
             <img
               src="./images/icon-people-first.svg"
-              class="card-img-top"
+              class="card-img-top w-50 mx-auto"
               alt="People First"
             />
             <div class="card-body">
@@ -111,91 +134,104 @@
                 Our plans aren’t full of conditions and clauses to prevent
                 payouts. We make sure you’re covered when you need it.
               </p>
-              <a href="#" class="btn btn-primary">Know more...</a>
             </div>
           </div>
         </div>
       </section>
+      <!-----------------------PURPLE SECTION -------------------------------------------->
       <section>
-        <div class="row">
-          <div class="col-12 col-sm-6">
-            <h2>Find out more about how we work</h2>
+        <div class="row bg-primary p-5 custom-purple-section">
+          <div class="col-12 col-sm-6 text-center text-md-start p-2">
+            <h2 class="h2 text-secondary">Find out more about how we work</h2>
           </div>
-          <div class="col-12 col-sm-6">
-            <button type="button" class="btn btn-primary">How we work</button>
+          <div class="col-12 col-sm-6 text-center text-md-end p-2">
+            <button type="button" class="btn btn-outline-secondary rounded-0">
+              How we work
+            </button>
           </div>
         </div>
       </section>
+      <!-----------------------FOOTER -------------------------------------------->
       <footer>
-        <div class="row">
-          <div class="col-12 col-sm-6">
+        <!-- LOGO Y REDES SOCIALES -->
+        <div class="row custom-footer">
+          <div class="col-12 col-sm-6 p-3 text-center text-md-start">
             <a href="#" class="navbar-brand">
               <img src="./images/logo.svg" class="img-fluid" alt="logo"
             /></a>
           </div>
-          <div class="col-12 col-sm-6">
-            <ul class="navbar-nav ms-3">
-              <li>
+          <div class="col-12 col-sm-6 p-3 text-center text-md-start">
+            <ul
+              class="navbar-nav ms-3 d-flex flex-row justify-content-around align-items-center"
+            >
+              <li class="nav-item">
                 <a href="#"
                   ><img src="./images/icon-facebook.svg" alt="facebook logo"
                 /></a>
               </li>
-              <li>
+              <li class="nav-item">
                 <a href="#"
                   ><img src="./images/icon-twitter.svg" alt="twitter logo"
                 /></a>
               </li>
-              <li>
+              <li class="nav-item">
                 <a href="#"
                   ><img src="./images/icon-pinterest.svg" alt="pinterest logo"
                 /></a>
               </li>
-              <li>
+              <li class="nav-item">
                 <a href="#"
                   ><img src="./images/icon-instagram.svg" alt="instagram logo"
                 /></a>
               </li>
             </ul>
           </div>
-          <!-- Footer Lists -->
-          <div class="card col-12 col-sm-3">
-            <h5>Our company</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="">How we work</a></li>
-              <li class="list-group-item"><a href="">Why Insure?</a></li>
-              <li class="list-group-item"><a href="">View plans</a></li>
-              <li class="list-group-item"><a href="">Reviews</a></li>
-            </ul>
+
+          <!-- FOOTER LISTS -->
+          <div class="row justify-content-around">
+            <div
+              class="col-12 col-sm-3 text-center text-md-start custom-footer-lists"
+            >
+              <h5 class="h5">Our company</h5>
+              <ul class="navbar-nav">
+                <li><a class="nav-link" href="#">How we work</a></li>
+                <li><a class="nav-link" href="#">Why Insure?</a></li>
+                <li><a class="nav-link" href="#">View plans</a></li>
+                <li><a class="nav-link" href="#">Reviews</a></li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-sm-3 text-center text-md-start custom-footer-lists"
+            >
+              <h5 class="h5">Help me</h5>
+              <ul class="navbar-nav">
+                <li><a class="nav-link" href="#">FAQ</a></li>
+                <li><a class="nav-link" href="#">Terms of use</a></li>
+                <li><a class="nav-link" href="#">Privacy policy</a></li>
+                <li><a class="nav-link" href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-sm-3 text-center text-md-start custom-footer-lists"
+            >
+              <h5 class="h5">Contact</h5>
+              <ul class="navbar-nav">
+                <li><a class="nav-link" href="#">Sales</a></li>
+                <li><a class="nav-link" href="#">Support</a></li>
+                <li><a class="nav-link" href="#">Live chat</a></li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-sm-3 text-center text-md-start custom-footer-lists"
+            >
+              <h5 class="h5">Others</h5>
+              <ul class="navbar-nav">
+                <li><a class="nav-link" href="#">Careers</a></li>
+                <li><a class="nav-link" href="#">Press</a></li>
+                <li><a class="nav-link" href="#">Licenses</a></li>
+              </ul>
+            </div>
           </div>
-
-          <div class="card col-12 col-sm-3">
-          <h5>Help me</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="">FAQ</a></li>
-            <li class="list-group-item"><a href="">Terms of use</a></li>
-            <li class="list-group-item"><a href="">Privacy policy</a></li>
-            <li class="list-group-item"><a href="">Cookies</a></li>
-          </ul>
-        </div>
-
-        <div class="card col-12 col-sm-3">
-          <h5>Contact</h5>
-          <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="">Sales</a></li>
-              <li class="list-group-item"><a href="">Support</a></li>
-              <li class="list-group-item"><a href="">Live chat</a></li>
-            </ul>
-        </div>
-
-        <div class="card col-12 col-sm-3">
-          <h5>Others</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="">Careers</a></li>
-              <li class="list-group-item"><a href="">Press</a></li>
-              <li class="list-group-item"><a href="">Licenses</a></li>
-          </ul>
-        </div>
-
         </div>
       </footer>
     </div>

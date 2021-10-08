@@ -5,18 +5,73 @@ $grayish-blue: hsl(216, 30%, 68%);
 $very-dark-violet: hsl(270, 9%, 17%);
 $dark-grayish-violet: hsl(273, 4%, 51%);
 
-
 //2-Modificación en Bootstrap
 
-$primary:$dark-violet;
-$secondary:$very-light-gray;
-$success:$grayish-blue;
-$dark:$very-dark-violet;
-$info:$dark-grayish-violet;
+$primary: $dark-violet;
+$secondary: $very-light-gray;
+$success: $grayish-blue;
+$dark: $very-dark-violet;
+$info: $dark-grayish-violet;
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+body {
+  font-family: "Karla", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+}
 
-#nav-menu{
-    background-image: url(./imagesbg-pattern-how-we-work-mobile.svg);
+.nav-item {
+  text-transform: uppercase;
+  padding: 10px;
+  color: $info;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+.custom-header {
+  background-color: $primary;
+  background-image: url(/images/bg-pattern-intro-left-desktop.svg),
+    url(/images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
+  color: $secondary;
+}
+
+.custom-section {
+  background-color: $primary;
+  color: $secondary;
+  padding: 50px 0;
+}
+
+.custom-purple-section {
+  background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50% 100%;
+}
+.custom-footer {
+  background-color: $secondary;
+  background-image: url(/images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 60px 30px 20px;
+}
+.custom-footer-lists {
+  margin-top: 40px;
+  .h5 {
+    text-transform: uppercase;
+    color: $info;
+    background: transparent;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    color: $primary;
+    background-color: transparent;
+  }
 }
